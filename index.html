@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,22 +57,26 @@
         <section id="hero" class="text-center text-white bg-dark py-5">
             <div class="container">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <p class="display-1 mb-3">Welcome to AP Creatives</p>
-                    <h1 class="display-4 mb-4">Transforming Visions Into Reality</h1>
+                    <p class="display-1 mb-3">AP Creatives</p>
+                    <p class="display-4 mb-4">Transforming Visions Into Reality</p>
                     <button class="btn btn-dark" type="button">Make an Appointment</button>
                 </div>
             </div>
         </section>
 
-        <section id="cards" class="py-5 bg-dark text-light">
+        <section id="cards" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <h2 class="text-center mb-4">What We Offer</h2>
                 <div class="row gy-4">
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="card border-0">
                             <div class="ratio ratio-16x9">
-                                <img src="images/webd.jpg" class="card-img-top img-fluid"
-                                    alt="Web Design image - Glasses with sceen of web design code">
+                                <picture>
+                                    <source srcset="images/small/webd-320_x_180.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/large/webd-720_x_360.jpg" media="(min-width: 768px)">
+                                    <img src="images/large/webd-720_x_360.jpg" class="card-img-top img-fluid rounded"
+                                        alt="Web Design image">
+                                </picture>
                             </div>
                             <div class="card-body bg-white text-dark text-center">
                                 <h3 class="card-title">Web Design</h3>
@@ -83,11 +88,15 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                         <div class="card border-0">
                             <div class="ratio ratio-16x9">
-                                <img src="images/uxuid.jpg" class="card-img-top img-fluid"
-                                    alt="UX/UI Design image- low fidelity wireframe images">
+                                <picture>
+                                    <source srcset="images/small/uxuid-320_x_180.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/large/uxuid-720_x_360.jpg" media="(min-width: 768px)">
+                                    <img src="images/large/uxuid-720_x_360.jpg" class="card-img-top img-fluid rounded"
+                                        alt="UX/UI Design image">
+                                </picture>
                             </div>
                             <div class="card-body bg-white text-dark text-center">
                                 <h3 class="card-title">UX/UI</h3>
@@ -99,11 +108,15 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
                         <div class="card border-0">
                             <div class="ratio ratio-16x9">
-                                <img src="images/graphicd.jpg" class="card-img-top img-fluid"
-                                    alt="Graphic Design - a person creating graphic design using a tablet and laptop ">
+                                <picture>
+                                    <source srcset="images/small/graphicd-320_x_180.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/large/graphicd-720_x_360.jpg" media="(min-width: 768px)">
+                                    <img src="images/large/graphicd-720_x_360.jpg"
+                                        class="card-img-top img-fluid rounded" alt="Graphic Design image">
+                                </picture>
                             </div>
                             <div class="card-body bg-white text-dark text-center">
                                 <h3 class="card-title">Graphic Design</h3>
@@ -115,11 +128,15 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
                         <div class="card border-0">
                             <div class="ratio ratio-16x9">
-                                <img src="images/photod.jpg" class="card-img-top img-fluid"
-                                    alt="Photo/Video image - a child peeking at his gift">
+                                <picture>
+                                    <source srcset="images/small/photod-320_x_180.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/large/photod-720_x_360.jpg" media="(min-width: 768px)">
+                                    <img src="images/large/photod-720_x_360.jpg" class="card-img-top img-fluid rounded"
+                                        alt="Photo/Video image">
+                                </picture>
                             </div>
                             <div class="card-body bg-white text-dark text-center">
                                 <h3 class="card-title">Photo/Video</h3>
@@ -133,16 +150,20 @@
             </div>
         </section>
 
-        <section class="py-5 bg-light text-dark" id="approach">
+        <section class="py-5 bg-light text-dark" id="approach" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-4">Our Approach</h2>
                 <div class="row mb-4">
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="images/approach.jpg"
-                            alt="Our Approach image - a cemara in a tripod with image bokeh on the background ">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                        <picture>
+                            <source srcset="images/small/approach-720_x_360.jpg" media="(max-width: 767px)">
+                            <source srcset="images/large/approach-1920_x_1200.jpg" media="(min-width: 768px)">
+                            <img class="img-fluid rounded" src="images/large/approach-1920_x_1200.jpg"
+                                alt="Our Approach image">
+                        </picture>
                     </div>
 
-                    <div class="col-lg-6 align-self-center">
+                    <div class="col-12 col-lg-6 d-flex align-items-center" data-aos="fade-left">
                         <p>At AP Creatives, we believe in turning your ideas into reality through creative solutions and
                             exceptional design. From concept to execution, our approach is focused on delivering quality
                             and value, ensuring your brand stands out in a crowded marketplace.</p>
@@ -151,11 +172,12 @@
             </div>
         </section>
 
-        <section class="py-5 bg-dark" id="testimonials">
+
+        <section class="py-5 bg-dark" id="testimonials" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-4 text-light">What Our Clients Say</h2>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch" data-aos="fade-up">
                         <div class="card text-center border-0 w-100">
                             <div class="card-body">
                                 <p class="card-text">"A fantastic experience from start to finish. Highly recommend
@@ -165,7 +187,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch" data-aos="fade-up"
+                        data-aos-delay="100">
                         <div class="card text-center border-0 w-100">
                             <div class="card-body">
                                 <p class="card-text">"From beginning to end, the service was exceptional. Highly
@@ -175,7 +198,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch" data-aos="fade-up"
+                        data-aos-delay="200">
                         <div class="card text-center border-0 w-100">
                             <div class="card-body">
                                 <p class="card-text">"The dedication and skill demonstrated were remarkable. I highly
@@ -185,7 +209,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch" data-aos="fade-up"
+                        data-aos-delay="300">
                         <div class="card text-center border-0 w-100">
                             <div class="card-body">
                                 <p class="card-text">"Their commitment to excellence and client satisfaction was clear
@@ -199,14 +224,14 @@
             </div>
         </section>
 
-        <section class="container py-5" id="map">
+
+        <section class="container py-5" id="map" data-aos="fade-up">
             <h2 class="text-center mb-4">Find Us Here</h2>
             <div class="position-relative" style="padding-top: 56.25%; height: 0; overflow: hidden;">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.206586259833!2d-75.74938148468169!3d45.32345497909881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05043e08e839%3A0x4d54ec2d33e16b7a!2s1385%20Woodroffe%20Ave%2C%20Ottawa%2C%20ON%20K2G%201V8%2C%20Canada!5e0!3m2!1sen!2sus!4v1685920938814!5m2!1sen!2sus"
                     allowfullscreen="" aria-hidden="false" tabindex="0"
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-
             </div>
         </section>
     </main>
@@ -214,7 +239,6 @@
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <div class="container">
             <p class="mb-0">© 2024 AP Creatives. All rights reserved.</p>
-            <p class="mb-0">1385 Woodroffe Ave, Ottawa, ON K2G 1V8</p>
             <p class="mb-0">Email: apcreatives@gmail.com | Phone: (123) 456-7890</p>
         </div>
     </footer>
@@ -222,6 +246,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
